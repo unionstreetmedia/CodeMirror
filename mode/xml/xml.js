@@ -231,6 +231,7 @@ CodeMirror.defineMode("xml", function(config, parserConfig) {
       return baseState;
     }
   }
+
   function closeState(type, _stream, state) {
     if (type != "endTag") {
       setStyle = "error";
