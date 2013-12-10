@@ -90,4 +90,12 @@
 
   IT('parentheses',
     "foo [1 { color][2 : darken][3 ($blue, 9%][2 )][1 ; ]}");
+
+  IT('vardef',
+     "$name[1 : 'val'];",
+     "tag [1 {]",
+     "[1  inner ][2 {]",
+     "[2    margin][3 : 3px][2 ;]",
+     "[2  ][1 }]",
+     "}");
 })();

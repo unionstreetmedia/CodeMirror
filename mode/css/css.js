@@ -143,7 +143,7 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     } else if (type == "word") {
       override = "tag";
     } else if (type == "variable-definition") {
-      return pushContext(state, s_maybeprop);
+      return s_maybeprop;
     } else if (type == "interpolation") {
       return pushContext(state, s_interpolation);
     } else if (type == ":") {
